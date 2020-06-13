@@ -7,5 +7,5 @@ github: https://github.com/XBadboy
 
 commands:
  fly:
-  description: §l§aPLUGIN BY §eALFIANGAMING
-  permission: fly.command
+  description: §eOpen Your Menu FlyUI_By_Alfiangaming
+  permission: fly.commands
