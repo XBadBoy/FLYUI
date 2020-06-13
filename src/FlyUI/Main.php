@@ -27,7 +27,7 @@ $this->getServer()->getPluginManager()->registerEvents($this,$this);
     public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool {
         switch($cmd->getName()){                    
             case "fly":
-                if ($sender->hasPermission("fly.command")){
+                if ($sender->hasPermission("fly.commands")){
                      $this->openMyForm($sender);
                 }else{     
                      $sender->sendMesseage(TextFormat::RED . "Kamu Mempunyai Permision op");
@@ -48,7 +48,7 @@ $this->getServer()->getPluginManager()->registerEvents($this,$this);
             }             
             switch($result){
                 case 0:
-                    $player->sendMessage(TextFormat::GREEN . "Mode terbang Akftif");
+                    $player->sendMessage(TextFormat::GREEN . "Mode terbang Aktif");
                     $player->addTitle("§l§6Fly", "§a§lAktif");
                     $player->setAllowFlight(true);
                 break;
@@ -63,7 +63,7 @@ $this->getServer()->getPluginManager()->registerEvents($this,$this);
             
             });
             $form->setTitle("§l§6FlyUI");
-            $form->setContent("§l§ePlugin§aBy§bAlfiangaming");
+            $form->setContent("§aOpen Your Menu");
             $form->addButton("§l§aAktif");
             $form->addButton("§l§eNonaktif");
             $form->addButton("§l§cKeluar");
